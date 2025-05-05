@@ -14,15 +14,15 @@ export default async function handler(req, res) {
   try {
     // Insert the email into Supabase
     const { data, error } = await supabase
-      .from('subscribers')
+      .from('reachout')
       .insert([{ email }])
       .select()
 
     if (error) throw error
 
-    return res.status(200).json({ message: 'Subscription Successful!' })
+    return res.status(200).json({ message: 'Thank you, we will reach-out soon!' })
   } catch (error) {
     console.error('error subscribing:', error)
-    return res.status(500).json({ message: 'Error Subscribing' })
+    return res.status(500).json({ message: 'Error registering your email' })
   }
 }

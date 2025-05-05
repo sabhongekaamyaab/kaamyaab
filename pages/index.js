@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import EmailForm from '../components/EmailForm'
 import Link from 'next/link'
 import { getAllPosts } from '../lib/markdown'
+import ReachOut from '../components/ReachOut'
 
 export default function Home({ latestPosts }) {
   return (
@@ -12,13 +13,9 @@ export default function Home({ latestPosts }) {
         <p className="description">
           Kaamyaab partners with Indian educational institutes to deliver industry-ready, 1-year online courses in AI/ML and Data Structures & Algorithms (DSA). Equip your students with the skills that matter for tomorrow's tech landscape.
         </p>
-        <div className="cta-button">
-          <Link href="https://kaamyaab.notion.site/1c928c9863dc8184a92be67196516e1b" target="_blank" rel="noopener noreferrer">
-            <button className="primary-button">
-              Partner With Us
-            </button>
-          </Link>
-        </div>
+        <div className="email-form-container">
+        <ReachOut />
+      </div>
       </div>
       
       <section className="features">

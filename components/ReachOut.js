@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function EmailForm() {
+export default function ReachOut() {
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState('')
   const [loading, setLoading] = useState(false)
@@ -11,7 +11,7 @@ export default function EmailForm() {
     setStatus('')
     
     try {
-      const response = await fetch('/api/subscribe', {
+      const response = await fetch('/api/reachout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,36 +36,27 @@ export default function EmailForm() {
 
   return (
     <div className="email-form">
-      <h2>Stay updated</h2>
-      <p>Subscribe to our newsletter to get the latest updates.</p>
-      
       <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="Enter Your Email"
+          placeholder="Enter your email for a reach-out!"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
         <button type="submit" disabled={loading}>
-          {loading ? 'Subscribing...' : 'Subscribe'}
+          {loading ? 'Registering...' : 'Request a Reachout'}
         </button>
       </form>
       
       {status === 'success' && (
-        <p className="success-message">Thanks for subscribing!</p>
+        <p className="success-message">Thanks for sharing your email. We'll reach out soon!</p>
       )}
       {status === 'error' && (
         <p className="error-message">Something went wrong. Please try again.</p>
       )}
       
       <style jsx>{`
-        .email-form {
-          background-color: #f9f9f9;
-          padding: 2rem;
-          border-radius: 8px;
-          margin: 2rem 0;
-        }
         form {
           display: flex;
           margin: 1rem 0;
