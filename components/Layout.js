@@ -37,29 +37,6 @@ export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI
       
       <main>{children}</main>
 
-      {/* Fillout Form Container */}
-      <div 
-        data-fillout-id="wP1cRursxcus" 
-        data-fillout-embed-type="popup" 
-        data-fillout-button-text="📅 let's gmeet!" 
-        data-fillout-dynamic-resize 
-        data-fillout-button-float="bottom-right"
-        data-fillout-inherit-parameters
-        data-fillout-popup-size="medium"
-      />
-
-      {/* Fillout Script */}
-      <Script 
-        src="https://server.fillout.com/embed/v1/" 
-        strategy="afterInteractive"
-        onError={(e) => {
-          console.error('Error loading Fillout script:', e);
-        }}
-        onLoad={() => {
-          console.log('Fillout script loaded successfully');
-        }}
-      />
-      
       <Footer />
       
       <style jsx>{`
