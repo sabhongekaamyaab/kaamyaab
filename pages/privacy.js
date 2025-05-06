@@ -5,7 +5,7 @@ export default function Privacy() {
     <Layout title="Privacy Policy | kaamyaab">
       <div className="privacy-container">
         <h1>Privacy Policy</h1>
-        <p>KAAMYAAB INDIA ("we," "our," "us") values your privacy. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you visit our website https://kaamyaab.in and use our AI automation services.</p>
+        <p>KAAMYAAB INDIA ("we," "our," "us") values your privacy. This Privacy Policy outlines how we collect, use, disclose, and protect your information when you visit our website https://kaamyaab.in and use any of our educational offerings.</p>
         <div className="content">
           <section>
             <h2>1. Information We Collect</h2>
@@ -37,7 +37,7 @@ export default function Privacy() {
           <section>
             <h2>4. Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p>Email: hello@kaamyaab.com</p>
+            <p>Email: hello@kaamyaab.in</p>
           </section>
 
           <section>
