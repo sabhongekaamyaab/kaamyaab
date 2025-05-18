@@ -41,7 +41,7 @@ export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI
       
       <style jsx>{`
         .container {
-          max-width: 1100px;
+          max-width: 1200px;
           margin: 0 auto;
           padding: 0 1rem;
         }

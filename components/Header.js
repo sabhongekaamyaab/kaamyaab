@@ -20,21 +20,55 @@ export default function Header() {
         </button>
 
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+          <li>
+            <Link href="/how-we-work">
+              How We Work
+            </Link>
+          </li>
+          <li>
+            <Link href="/ai-course">
+              AI Course
+            </Link>
+          </li>
+          <li>
+            <Link href="/dsa-course">
+              DSA Course
+            </Link>
+          </li>
+          <li>
+            <Link href="/success-stories">
+              Success Stories
+            </Link>
+          </li>
+          <li>
+            <Link href="https://thisweekinaiclub.substack.com">
+              AI Newsletter
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              About Us
+            </Link>
+          </li>
           {/* <li>
             <Link href="/pricing">
               Pricing
             </Link>
           </li> */}
           <li>
-            <Link href="https://thisweekinaiclub.substack.com">
-              AI Newsletter
+            <Link href="/lead-gen">
+              <button style={{
+                background: '#0070f3',
+                color: 'white',
+                padding: '8px 16px',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer'
+              }}>
+                Get Started
+              </button>
             </Link>
           </li>
-          {/* <li>
-            <Link href="/about">
-              About Us
-            </Link>
-          </li> */}
         </ul>
       </nav>
       

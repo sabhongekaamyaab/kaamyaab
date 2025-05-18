@@ -1,6 +1,7 @@
 // pages/index.js
 import Layout from '../components/Layout'
 import EmailForm from '../components/EmailForm'
+import SuccessStories from '../components/SuccessStories'
 import Link from 'next/link'
 import { getAllPosts } from '../lib/markdown'
 import ReachOut from '../components/ReachOut'
@@ -18,6 +19,16 @@ export default function Home({ latestPosts }) {
       </div>
       </div>
       
+      <section className="trust-builder">
+        <h2>Trusted by Students Nationwide</h2>
+        <p className="trust-description">
+          Hundreds of students from top institutes have accelerated their careers with Kaamyaab. Our alumni have landed roles at leading tech companies, thanks to our expert mentorship and hands-on curriculum.
+        </p>
+          <div className="success-stories-section">
+          <SuccessStories/>
+          </div>
+      </section>
+
       <section className="features">
         <h2>Why Choose Kaamyaab?</h2>
         <div className="features-grid">
