@@ -35,11 +35,11 @@ export default function Header() {
               DSA Course
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/success-stories">
               Success Stories
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="https://thisweekinaiclub.substack.com">
               AI Newsletter

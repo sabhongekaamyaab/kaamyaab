@@ -1,14 +1,6 @@
 const successStories = [
   {
     id: 1,
-    name: "Arshia",
-    company: "Microsoft",
-    city: "Delhi",
-    feedback: "Kaamyaab helped me land my dream job at Google. Their guidance and mentorship were invaluable throughout the process.",
-    image: "/success-stories/arshia.jpg"
-  },
-  {
-    id: 2,
     name: "Vishal",
     company: "Google",
     city: "Lucknow",
@@ -16,7 +8,7 @@ const successStories = [
     image: "/success-stories/priya.jpg"
   },
   {
-    id: 3,
+    id: 2,
     name: "Aman",
     company: "Google",
     city: "Delhi",
@@ -24,7 +16,7 @@ const successStories = [
     image: "/success-stories/amit.jpg"
   },
   {
-    id: 4,
+    id: 3,
     name: "Praveen",
     company: "PayTM",
     city: "Delhi",

@@ -5,24 +5,44 @@ import SuccessStories from '../components/SuccessStories'
 import Link from 'next/link'
 import { getAllPosts } from '../lib/markdown'
 import ReachOut from '../components/ReachOut'
+import PlacementStats from '../components/PlacementStats'
+import Image from 'next/image';
+import FAQ from '../components/Faq';
 
 export default function Home({ latestPosts }) {
   return (
     <Layout>
       <div className="hero">
-        <h1>Make India the AI Research Powerhouse</h1>
-        <p className="description">
-          Kaamyaab partners with Indian educational institutes to deliver industry-ready, 1-year online courses in AI/ML and Data Structures & Algorithms (DSA). Equip your students with the skills that matter for tomorrow's tech landscape.
-        </p>
-        <div className="email-form-container">
-        <ReachOut />
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>Make India the AI Research Powerhouse</h1>
+            <p className="description">
+              Equip your students with 1-year online courses in AI/ML and DSA that matter for tomorrow's tech landscape.
+            </p>
+            <div className="email-form-container">
+              <ReachOut />
+            </div>
+          </div>
+          <div className="hero-image">
+            <Image
+              src="/assets/index/hero.png" // Add your image to public folder
+              alt="AI Education Illustration"
+              width={500}
+              height={500}
+              priority
+            />
+          </div>
+        </div>
       </div>
-      </div>
-      
+
+      <section className="metrics">
+        <PlacementStats/>
+      </section>
+  
       <section className="trust-builder">
         <h2>Trusted by Students Nationwide</h2>
         <p className="trust-description">
-          Hundreds of students from top institutes have accelerated their careers with Kaamyaab. Our alumni have landed roles at leading tech companies, thanks to our expert mentorship and hands-on curriculum.
+          Hundreds of students have accelerated their careers with Kaamyaab. <br></br> Our alumni have landed roles at leading tech companies, with our hands-on curriculum and mentorship.
         </p>
           <div className="success-stories-section">
           <SuccessStories/>
@@ -105,6 +125,10 @@ export default function Home({ latestPosts }) {
         </div>
       </section>
 
+      <div className='faq-section'>
+        <FAQ />
+      </div>
+
       <div className="email-form-container">
         <EmailForm />
       </div>
@@ -133,19 +157,79 @@ export default function Home({ latestPosts }) {
             background-color: #0060df;
           }
         .hero {
-          margin-top: 5rem;
-          text-align: center;
-          padding: 5rem 0;
+          margin-top: 1rem;
+          padding: 4rem 0;
         }
-        .hero h1 {
-          font-size: 2.5rem;
-          margin-bottom: 1rem;
+        
+        .hero-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          gap: 4rem;
+          padding: 0 2rem;
         }
+        
+        .hero-text {
+          flex: 1;
+          text-align: left;
+        }
+        
+        .hero-text h1 {
+          font-size: 3rem;
+          line-height: 1.2;
+          margin-bottom: 1.5rem;
+          color: #333;
+        }
+        
         .description {
           font-size: 1.2rem;
-          max-width: 600px;
-          margin: 0 auto 2rem;
+          margin-bottom: 2rem;
           color: #666;
+          max-width: 100%;
+          margin-left: 0;
+        }
+        
+        .hero-image {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        @media (max-width: 1024px) {
+          .hero-content {
+            gap: 2rem;
+          }
+          
+          .hero-text h1 {
+            font-size: 2.5rem;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .hero-content {
+            flex-direction: column;
+            text-align: center;
+          }
+          
+          .hero-text {
+            text-align: center;
+          }
+          
+          .description {
+            margin: 0 auto 2rem;
+          }
+          
+          .hero-image {
+            order: -1;
+            margin-bottom: 2rem;
+          }
+        }
+        .trust-builder{
+          margin-top: 1rem;
+          text-align: center;
+          padding: 1rem 0;
         }
         .buttons {
           display: flex;
@@ -255,6 +339,56 @@ export default function Home({ latestPosts }) {
             max-width: 120px;
             height: auto;
           }
+        .metrics {
+          padding: 2rem 0;
+          background-color: #f7f9fc;
+          margin: -2rem 0 2rem 0;
+        }
+
+        .metrics-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 2rem;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 1rem;
+        }
+
+        .metric-card {
+          text-align: center;
+          padding: 1.5rem;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+          transition: transform 0.3s ease;
+        }
+
+        .metric-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .metric-card h3 {
+          font-size: 2.5rem;
+          color: #0070f3;
+          margin: 0 0 0.5rem 0;
+          font-weight: 700;
+        }
+
+        .metric-card p {
+          font-size: 1.1rem;
+          color: #666;
+          margin: 0;
+        }
+
+        @media (max-width: 768px) {
+          .metrics-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          
+          .metric-card h3 {
+            font-size: 2rem;
+          }
+        }
       `}</style>
     
     </Layout>
