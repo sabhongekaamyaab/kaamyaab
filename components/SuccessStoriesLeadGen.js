@@ -22,7 +22,7 @@ export default function SuccessStoriesSection() {
   return (
     <div className="success-stories">
       <div className="story-card">
-        <div className="story-content">
+          {/*
           <div className="story-image">
             <Image
               src={currentStory.image}
@@ -30,8 +30,8 @@ export default function SuccessStoriesSection() {
               layout="fill"
               objectFit="cover"
               className="rounded-full"
-            />
-          </div>
+            /> 
+          </div>*/}
           <div className="story-details">
             <div className="story-header">
               <h3>{currentStory.name}</h3>
