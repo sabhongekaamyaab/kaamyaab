@@ -54,3 +54,15 @@ p {
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.3);
   }
+
+:root {
+  --primary-red: #FF3131;
+  --primary-green: #1a5d1a;
+  --text-dark: #333;
+  --text-light: #666;
+  --bg-light: #f8f9fa;
+  --bg-green: #e6f7ef;
+  --bg-red: #fff1f1;
+  --spacing-base: 1rem;
+  --max-width: 1200px;
+}

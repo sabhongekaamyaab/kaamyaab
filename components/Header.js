@@ -20,9 +20,14 @@ export default function Header() {
         </button>
 
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-          <li>
+          {/* <li>
             <Link href="/how-we-work">
               How We Work
+            </Link>
+          </li> */}
+          <li>
+            <Link href="why-kaamyaab">
+              Why Kaamyaab?
             </Link>
           </li>
           <li>
@@ -58,7 +63,7 @@ export default function Header() {
           <li>
             <Link href="/lead-gen">
               <button style={{
-                background: '#0070f3',
+                background: '#FF3131',
                 color: 'white',
                 padding: '8px 16px',
                 border: 'none',

@@ -39,9 +39,8 @@ export default function SuccessStories() {
               </div>
               <div className="story-details">
                 <div className="story-header">
-                  <h3>{story.name}</h3>
-                  <p className="company">{story.company}</p>
-                  <p className="city">{story.city}</p>
+                  <h3>{story.name}, {story.company}</h3>
+                  {/* <p className="city">{story.city}</p> */}
                 </div>
                 <p className="feedback">"{story.feedback}"</p>
               </div>
@@ -79,8 +78,8 @@ export default function SuccessStories() {
         }
         .story-image {
           position: relative;
-          width: 80px;
-          height: 80px;
+          width: 200px;
+          height: 100px;
           flex-shrink: 0;
           margin: 0 auto 1rem;
         }

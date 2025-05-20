@@ -39,7 +39,7 @@ export default function Footer() {
             transition: color 0.3s ease;
           }
           .email-link:hover {
-            color: #0070f3;
+            color: #FF3131;
           }
           .social-icons {
             display: flex;

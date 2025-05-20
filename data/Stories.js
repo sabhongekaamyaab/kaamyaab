@@ -4,40 +4,24 @@ const successStories = [
     name: "Vishal",
     company: "Google",
     city: "Lucknow",
-    feedback: "The mock interviews and resume reviews at Kaamyaab were game-changers for my preparation.",
-    image: "/success-stories/priya.jpg"
+    feedback: "The mock interviews and structured DSA problem solving at Kaamyaab were game-changers for my preparation.",
+    image: "/assets/testimonials/vishal.jpg"
   },
   {
     id: 2,
     name: "Aman",
     company: "Google",
     city: "Delhi",
-    feedback: "Thanks to Kaamyaab's structured approach, I was able to crack multiple offers from top tech companies.",
-    image: "/success-stories/amit.jpg"
+    feedback: "Thanks to Kaamyaab's structured approach, I was able to crack multiple offers from top-tech companies.",
+    image: "/assets/testimonials/aman.jpg"
   },
   {
     id: 3,
-    name: "Praveen",
+    name: "Naveen",
     company: "PayTM",
     city: "Delhi",
-    feedback: "Thanks to Kaamyaab's structured approach, I was able to crack multiple offers from top tech companies.",
-    image: "/success-stories/amit.jpg"
-  },
-  {
-    id: 4,
-    name: "Bhagat",
-    company: "PhonePe",
-    city: "Bengaluru",
-    feedback: "Thanks to Kaamyaab's structured approach, I was able to crack multiple offers from top tech companies.",
-    image: "/success-stories/amit.jpg"
-  },
-  {
-    id: 4,
-    name: "Gautam",
-    company: "AirBnb",
-    city: "Bangalore",
-    feedback: "Thanks to Kaamyaab's structured approach, I was able to crack multiple offers from top tech companies.",
-    image: "/success-stories/amit.jpg"
+    feedback: "Coming from Tier-3 college, I never thought I could get into a top tech company. Kaamyaab made it possible.",
+    image: "/assets/testimonials/naveen.jpg"
   }
 ];
 

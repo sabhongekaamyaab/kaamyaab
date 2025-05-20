@@ -11,6 +11,7 @@ import FAQ from '../components/Faq';
 
 export default function Home({ latestPosts }) {
   return (
+    
     <Layout>
       <div className="hero">
         <div className="hero-content">
@@ -24,13 +25,15 @@ export default function Home({ latestPosts }) {
             </div>
           </div>
           <div className="hero-image">
-            <Image
-              src="/assets/index/hero.png" // Add your image to public folder
-              alt="AI Education Illustration"
-              width={500}
-              height={500}
-              priority
-            />
+            <div className="image-wrapper">
+              <Image
+                src="/assets/index/hero.png" // Add your image to public folder
+                alt="AI Education Illustration"
+                width={500}
+                height={500}
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -82,7 +85,7 @@ export default function Home({ latestPosts }) {
         </div>
       </section>
 
-      <section className="features">
+      {/* <section className="features">
         <h2>How It Works</h2>
         <div className="features-grid">
           <div className="feature-card">
@@ -98,7 +101,7 @@ export default function Home({ latestPosts }) {
             <p>Institutes and students get access to dashboards for tracking progress, attendance, and performance analytics.</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="features">
         <h2>Ready to Upskill Your Students?</h2>
@@ -117,10 +120,7 @@ export default function Home({ latestPosts }) {
           <div className="feature-card">
             <h3>Request a Demo</h3>
             <p>See our platform in action and explore our course content, teaching methodology, and student engagement tools.</p>
-          </div>
-          <div className="feature-card">
-            <h3>Join the Kaamyaab Network</h3>
-            <p>Become part of a growing community of forward-thinking institutes committed to excellence in tech education.</p>
+            <ReachOut/>
           </div>
         </div>
       </section>
@@ -147,14 +147,14 @@ export default function Home({ latestPosts }) {
           .cta-button a {
             display: inline-block;
             padding: 1rem 2rem;
-            background-color: #0070f3;
+            background-color: #FF3131;
             color: white;
             border-radius: 4px;
             font-size: 1.1rem;
             transition: background-color 0.3s ease;
           }
           .cta-button a:hover {
-            background-color: #0060df;
+            background-color: #FF3131;
           }
         .hero {
           margin-top: 1rem;
@@ -245,16 +245,16 @@ export default function Home({ latestPosts }) {
           transition: all 0.3s ease;
         }
         .button.primary {
-          background-color: #0070f3;
+          background-color: #FF3131;
           color: white;
         }
         .button.primary:hover {
-          background-color: #0060df;
+          background-color: #FF3131;
         }
         .button.secondary {
           background-color: white;
-          color: #0070f3;
-          border: 1px solid #0070f3;
+          color: #FF3131;
+          border: 1px solid #FF3131;
         }
         .button.secondary:hover {
           background-color: #f0f7ff;
@@ -369,7 +369,7 @@ export default function Home({ latestPosts }) {
 
         .metric-card h3 {
           font-size: 2.5rem;
-          color: #0070f3;
+          color: #FF3131;
           margin: 0 0 0.5rem 0;
           font-weight: 700;
         }
@@ -380,6 +380,16 @@ export default function Home({ latestPosts }) {
           margin: 0;
         }
 
+        .image-wrapper {
+          position: relative;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+        
+        .image-wrapper :global(img) {
+          border-radius: 10px;
+        }
+        
         @media (max-width: 768px) {
           .metrics-grid {
             grid-template-columns: repeat(2, 1fr);

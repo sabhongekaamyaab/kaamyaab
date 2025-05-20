@@ -84,7 +84,7 @@ export default function PlacementStats() {
 
         .metric-card h3 {
           font-size: 2.5rem;
-          color: #0070f3;
+          color: #FF3131;
           margin: 0 0 0.5rem 0;
           font-weight: 700;
         }
@@ -105,6 +105,6 @@ export default function PlacementStats() {
           }
         }
       `}</style>
-    </div>
+      </div>
   );
 }
