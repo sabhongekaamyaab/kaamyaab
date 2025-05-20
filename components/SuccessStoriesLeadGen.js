@@ -22,6 +22,7 @@ export default function SuccessStoriesSection() {
   return (
     <div className="success-stories">
       <div className="story-card">
+         <div className="story-content">
           {/*
           <div className="story-image">
             <Image
