@@ -5,13 +5,15 @@ export default function LeadGenForm() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
+    // Student fields
     github: '',
     college: '',
     year: '',
     programming_acumen: '',
-    designation: '',
-    department: '',
-    institute_name: ''
+    // College fields
+    highest_package: '',
+    average_package: '',
+    placement_percentage: ''
   })
   const [status, setStatus] = useState('')
 
@@ -43,9 +45,9 @@ export default function LeadGenForm() {
         github: '',
         year: '',
         programming_acumen: '',
-        designation: '',
-        department: '',
-        institute_name: ''
+        highest_package: '',
+        average_package: '',
+        placement_percentage: ''
       })
     } catch (error) {
       setStatus('error')
@@ -173,38 +175,57 @@ export default function LeadGenForm() {
         ) : (
           <>
             <div className="form-group">
-              <label>Designation</label>
+              <label>College Name</label>
               <input
                 type="text"
-                name="designation"
-                value={formData.designation}
+                name="college"
+                value={formData.college}
                 onChange={handleChange}
                 required
-                placeholder="Enter your designation"
+                placeholder="Enter your college name"
               />
             </div>
 
             <div className="form-group">
-              <label>Department</label>
+              <label>Highest Package (LPA)</label>
               <input
-                type="text"
-                name="department"
-                value={formData.department}
+                type="number"
+                name="highest_package"
+                value={formData.highest_package}
                 onChange={handleChange}
                 required
-                placeholder="Enter your department"
+                placeholder="Enter highest package offered"
+                min="0"
+                step="0.1"
               />
             </div>
 
             <div className="form-group">
-              <label>Institute Name</label>
+              <label>Average Package (LPA)</label>
               <input
-                type="text"
-                name="institute_name"
-                value={formData.institute_name}
+                type="number"
+                name="average_package"
+                value={formData.average_package}
                 onChange={handleChange}
                 required
-                placeholder="Enter your institute name"
+                placeholder="Enter average package offered"
+                min="0"
+                step="0.1"
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Placement Percentage</label>
+              <input
+                type="number"
+                name="placement_percentage"
+                value={formData.placement_percentage}
+                onChange={handleChange}
+                required
+                placeholder="Enter placement percentage"
+                min="0"
+                max="100"
+                step="1"
               />
             </div>
           </>

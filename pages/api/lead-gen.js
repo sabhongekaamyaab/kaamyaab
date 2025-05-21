@@ -9,9 +9,10 @@ export default async function handler(req, res) {
     const { userType, formData } = req.body
     const tableName = userType === 'student' ? 'lead_gen' : 'college_lead_gen'
     
+    // Update the relevantData filtering to match new fields
     const relevantData = Object.keys(formData).reduce((acc, key) => {
       if (
-        userType === 'student' && ['designation', 'department', 'institute_name'].includes(key) ||
+        userType === 'student' && ['highest_package', 'average_package', 'placement_percentage'].includes(key) ||
         userType === 'college' && ['github', 'year', 'programming_acumen'].includes(key)
       ) {
         return acc
