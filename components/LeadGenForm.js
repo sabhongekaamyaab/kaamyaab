@@ -1,10 +1,4 @@
 import { useState } from 'react'
-import { createClient } from '@supabase/supabase-js'
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_KEY
-)
 
 export default function LeadGenForm() {
   const [userType, setUserType] = useState('student')
@@ -26,23 +20,21 @@ export default function LeadGenForm() {
     setStatus('submitting')
 
     try {
-      const tableName = userType === 'student' ? 'lead_gen' : 'college_lead_gen'
-      
-      const relevantData = Object.keys(formData).reduce((acc, key) => {
-        if (
-          userType === 'student' && ['designation', 'department', 'institute_name'].includes(key) ||
-          userType === 'college' && ['github', 'year', 'programming_acumen'].includes(key)
-        ) {
-          return acc
-        }
-        return { ...acc, [key]: formData[key] }
-      }, {})
+      const response = await fetch('/api/lead-gen', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userType,
+          formData
+        }),
+      })
 
-      const { data, error } = await supabase
-        .from(tableName)
-        .insert([relevantData])
+      const data = await response.json()
 
-      if (error) throw error
+      if (!response.ok) throw new Error(data.message)
+
       setStatus('success')
       setFormData({
         name: '',
@@ -71,7 +63,7 @@ export default function LeadGenForm() {
   return (
     <div className="form-container">
       <div className="toggle-container">
-        <p>You're?</p>
+        <p>You're a</p>
         <button
           className={`toggle-button ${userType === 'student' ? 'active' : ''}`}
           onClick={() => setUserType('student')}

@@ -61,7 +61,7 @@ export default function Header() {
             </Link>
           </li> */}
           <li>
-            <Link href="/lead-gen">
+            <Link href="/get-in-touch">
               <button style={{
                 background: '#FF3131',
                 color: 'white',
