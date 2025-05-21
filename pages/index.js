@@ -16,9 +16,9 @@ export default function Home({ latestPosts }) {
       <div className="hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Make India the AI Research Powerhouse</h1>
+            <h1>Boost Placements with Industry-Ready AI & DSA Training</h1>
             <p className="description">
-              Equip your students with 1-year online courses in AI/ML and DSA that matter for tomorrow's tech landscape.
+            Partner with us to deliver cutting-edge AI and DSA courses tailored to the job market. Help your students land top tech roles with our placement-focused curriculum.
             </p>
             <div className="email-form-container">
               <ReachOut />

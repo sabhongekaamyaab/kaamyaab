@@ -39,13 +39,13 @@ export default function ReachOut() {
       <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="Enter your email for a reach-out!"
+          placeholder="Share your email and we'll reach out!"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
         <button type="submit" disabled={loading}>
-          {loading ? 'Registering...' : 'Request a Reachout'}
+          {loading ? 'Registering...' : 'Get a Demo'}
         </button>
       </form>
       

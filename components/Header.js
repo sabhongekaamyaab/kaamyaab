@@ -70,7 +70,7 @@ export default function Header() {
                 borderRadius: '4px',
                 cursor: 'pointer'
               }}>
-                Get Started
+                Talk to Us
               </button>
             </Link>
           </li>
