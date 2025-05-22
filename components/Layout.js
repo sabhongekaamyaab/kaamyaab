@@ -32,6 +32,15 @@ export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI
         {/* Optional: If you have an X handle */}
         <meta name="x:site" content="@kaamyaabin" />
       </Head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7j3z2l1Z4c5e5e5e5e5e5e5e5e5e5e5e5" crossOrigin="anonymous" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0QV6X5Z24"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E0QV6X5Z24');
+      </script>
       
       <Header />
       
