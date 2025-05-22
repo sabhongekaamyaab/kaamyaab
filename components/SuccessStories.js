@@ -32,8 +32,8 @@ export default function SuccessStories() {
                 <Image
                   src={story.image}
                   alt={story.name}
-                  layout="fill"
-                  objectFit="cover"
+                  fill={true}
+                  style={{ objectFit: 'cover' }}
                   className="rounded-full"
                 />
               </div>
