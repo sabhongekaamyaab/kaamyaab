@@ -79,7 +79,7 @@ export default function SuccessStories() {
         .story-image {
           position: relative;
           width: 200px;
-          height: 100px;
+          height: 200px;
           flex-shrink: 0;
           margin: 0 auto 1rem;
         }
