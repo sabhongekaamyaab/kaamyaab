@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Image from "next/legacy/image";
+import Image from 'next/image';
 import successStories from '../data/Stories'; // Assuming you have a data file for success stories
 
 
@@ -33,7 +33,8 @@ export default function SuccessStories() {
                   src={story.image}
                   alt={story.name}
                   fill={true}
-                  style={{ objectFit: 'cover' }}
+                  sizes="100%"
+                  style={{objectFit:"cover"}}
                   className="rounded-full"
                 />
               </div>

@@ -5,7 +5,7 @@ const successStories = [
     company: "Google",
     city: "Lucknow",
     feedback: "The mock interviews and structured DSA problem solving at Kaamyaab were game-changers for my preparation.",
-    image: "/assets/testimonials/vishal.jpg"
+    image: "/assets/testimonials/vishal.png"
   },
   {
     id: 2,
