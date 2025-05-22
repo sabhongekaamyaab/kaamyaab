@@ -83,13 +83,13 @@ export default function LeadGenForm() {
       </div>
 
       <form onSubmit={handleSubmit}>
-        <h2>Join Kaamyaab</h2>
+        {/* <h2>Join Kaamyaab</h2>
         <p className="form-description">
           {userType === 'student' 
             ? 'Take the first step towards your dream career'
             : 'Partner with us to transform your institutes tech education'
           }
-        </p>
+        </p> */}
         
         <div className="form-group">
           <label>Name</label>

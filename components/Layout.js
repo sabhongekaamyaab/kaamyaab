@@ -4,7 +4,7 @@ import Footer from './Footer'
 import Script from 'next/script'
 
 export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI Education' }) {
-  const description = "Kaamyaab equips Indian students with our one-year AI/ML program to prepare you for the jobs of tomorrow."
+  const description = "Kaamyaab equips Indian students with one-year AI/ML & DSA programs to prepare them for top tech interviews. Our hands-on approach, expert mentors, and real-world projects ensure you become job-ready in just 12 months. Join us to unlock your potential and succeed in the AI-driven future."
   const siteUrl = "https://kaamyaab.in" 
   const logoUrl = "https://kaamyaab.in/assets/kaamyaab.png" 
 
@@ -21,7 +21,7 @@ export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:image" content={logoUrl} />
-        <meta property="og:site_name" content="kaamyaab labs" />
+        <meta property="og:site_name" content="Kaamyaab India" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="x:card" content="summary_large_image" />
@@ -30,7 +30,7 @@ export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI
         <meta name="x:image" content={logoUrl} />
         
         {/* Optional: If you have an X handle */}
-        <meta name="x:site" content="@kaamyaab" />
+        <meta name="x:site" content="@kaamyaabin" />
       </Head>
       
       <Header />

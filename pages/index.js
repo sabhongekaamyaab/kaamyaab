@@ -20,9 +20,11 @@ export default function Home({ latestPosts }) {
             <p className="description">
             Partner with us to deliver cutting-edge AI and DSA courses tailored to the job market. Help your students land top tech roles with our placement-focused curriculum.
             </p>
-            <div className="email-form-container">
-              <ReachOut />
-            </div>
+            <Link href='/get-in-touch'> 
+            <button className="primary-button">
+              Apply Now
+            </button>
+            </Link>
           </div>
           <div className="hero-image">
             <div className="image-wrapper">
@@ -134,31 +136,10 @@ export default function Home({ latestPosts }) {
       </div>
       
       <style jsx>{`
-        .cta-button {
-            margin-top: 2rem;
-            display: 'inline-block',
-            padding: '0.8rem 1.5rem',
-            backgroundColor: '#0070f3',
-            color: 'white',
-            borderRadius: '4px',
-            textDecoration: 'none',
-            transition: 'background-color 0.3s ease'
-          }
-          .cta-button a {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background-color: #FF3131;
-            color: white;
-            border-radius: 4px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease;
-          }
-          .cta-button a:hover {
-            background-color: #FF3131;
-          }
         .hero {
           margin-top: 1rem;
-          padding: 4rem 0;
+          padding: 2rem 0;
+          overflow: hidden;
         }
         
         .hero-content {
@@ -166,8 +147,8 @@ export default function Home({ latestPosts }) {
           margin: 0 auto;
           display: flex;
           align-items: center;
-          gap: 4rem;
-          padding: 0 2rem;
+          gap: 2rem;
+          padding: 0 1rem;
         }
         
         .hero-text {
@@ -176,227 +157,156 @@ export default function Home({ latestPosts }) {
         }
         
         .hero-text h1 {
-          font-size: 3rem;
+          font-size: clamp(2rem, 5vw, 3rem);
           line-height: 1.2;
           margin-bottom: 1.5rem;
           color: #333;
         }
         
         .description {
-          font-size: 1.2rem;
+          font-size: clamp(1rem, 3vw, 1.2rem);
           margin-bottom: 2rem;
           color: #666;
           max-width: 100%;
-          margin-left: 0;
         }
         
         .hero-image {
           flex: 1;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          max-width: 500px;
+          width: 100%;
+        }
+
+        .image-wrapper {
+          position: relative;
+          width: 100%;
+          height: auto;
+          aspect-ratio: 1;
         }
         
-        @media (max-width: 1024px) {
-          .hero-content {
-            gap: 2rem;
-          }
-          
-          .hero-text h1 {
-            font-size: 2.5rem;
-          }
+        .features {
+          padding: 3rem 1rem;
+          overflow: hidden;
         }
-        
+
+        .features h2 {
+          text-align: center;
+          margin-bottom: 2rem;
+          font-size: clamp(1.5rem, 4vw, 2rem);
+        }
+
+        .features-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 1.5rem;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .feature-card {
+          padding: 1.5rem;
+          border-radius: 8px;
+          border: 1px solid #eaeaea;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          background: white;
+        }
+
+        .feature-card h3 {
+          font-size: clamp(1.1rem, 3vw, 1.25rem);
+          margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+          font-size: clamp(0.9rem, 2vw, 1rem);
+          line-height: 1.6;
+        }
+
+        .metrics {
+          padding: 2rem 1rem;
+          background-color: #f7f9fc;
+          margin: 0;
+          overflow: hidden;
+        }
+
+        .metrics-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 1rem;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .trust-builder {
+          margin-top: 1rem;
+          text-align: center;
+          padding: 2rem 1rem;
+        }
+
+        .trust-builder h2 {
+          font-size: clamp(1.5rem, 4vw, 2rem);
+          margin-bottom: 1rem;
+        }
+
+        .trust-description {
+          font-size: clamp(0.9rem, 2vw, 1.1rem);
+          max-width: 800px;
+          margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+          margin-top: 1.5rem;
+        }
+
+        .primary-button {
+          display: inline-block;
+          padding: 0.8rem 1.5rem;
+          background-color: #FF3131;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          font-size: clamp(0.9rem, 2vw, 1.1rem);
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
         @media (max-width: 768px) {
           .hero-content {
-            flex-direction: column;
+            flex-direction: column-reverse;
             text-align: center;
+            gap: 1.5rem;
           }
           
           .hero-text {
             text-align: center;
           }
           
-          .description {
-            margin: 0 auto 2rem;
-          }
-          
           .hero-image {
-            order: -1;
-            margin-bottom: 2rem;
+            max-width: 100%;
           }
-        }
-        .trust-builder{
-          margin-top: 1rem;
-          text-align: center;
-          padding: 1rem 0;
-        }
-        .buttons {
-          display: flex;
-          justify-content: center;
-          gap: 1rem;
-        }
-        .button {
-          display: inline-block;
-          padding: 0.8rem 1.5rem;
-          border-radius: 4px;
-          text-decoration: none;
-          font-weight: 500;
-          transition: all 0.3s ease;
-        }
-        .button.primary {
-          background-color: #FF3131;
-          color: white;
-        }
-        .button.primary:hover {
-          background-color: #FF3131;
-        }
-        .button.secondary {
-          background-color: white;
-          color: #FF3131;
-          border: 1px solid #FF3131;
-        }
-        .button.secondary:hover {
-          background-color: #f0f7ff;
-        }
-        .features, .latest-posts {
-          padding: 3rem 0;
-        }
-        .features h2, .latest-posts h2 {
-          text-align: center;
-          margin-bottom: 2rem;
-        }
-        .features-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 2rem;
-        }
-        .feature-card {
-          padding: 1.5rem;
-          border-radius: 8px;
-          border: 1px solid #eaeaea;
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .feature-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        .posts-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 2rem;
-          margin-bottom: 2rem;
-        }
-        .post-card {
-          padding: 1.5rem;
-          border: 1px solid #eaeaea;
-          border-radius: 8px;
-        }
-        .post-card h3 {
-          margin-top: 0;
-        }
-        .post-card a {
-          color: #333;
-          text-decoration: none;
-        }
-        .center {
-          text-align: center;
-        }
 
-        // for the current customers grid
-
-        .customers {
-            padding: 4rem 0;
-            text-align: center;
+          .features-grid {
+            grid-template-columns: 1fr;
           }
-          .customers h2 {
-            margin-bottom: 3rem;
-            font-size: 2rem;
-            color: #333;
-          }
-          .logo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 3rem;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 1rem;
-          }
-          .logo-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            filter: grayscale(100%);
-            opacity: 0.6;
-            transition: all 0.3s ease;
-          }
-          .logo-item:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-          }
-          .logo-item img {
-            max-width: 120px;
-            height: auto;
-          }
-        .metrics {
-          padding: 2rem 0;
-          background-color: #f7f9fc;
-          margin: -2rem 0 2rem 0;
-        }
 
-        .metrics-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          gap: 2rem;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 1rem;
-        }
-
-        .metric-card {
-          text-align: center;
-          padding: 1.5rem;
-          background: white;
-          border-radius: 8px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-          transition: transform 0.3s ease;
-        }
-
-        .metric-card:hover {
-          transform: translateY(-5px);
-        }
-
-        .metric-card h3 {
-          font-size: 2.5rem;
-          color: #FF3131;
-          margin: 0 0 0.5rem 0;
-          font-weight: 700;
-        }
-
-        .metric-card p {
-          font-size: 1.1rem;
-          color: #666;
-          margin: 0;
-        }
-
-        .image-wrapper {
-          position: relative;
-          border-radius: 10px;
-          overflow: hidden;
-        }
-        
-        .image-wrapper :global(img) {
-          border-radius: 10px;
-        }
-        
-        @media (max-width: 768px) {
           .metrics-grid {
             grid-template-columns: repeat(2, 1fr);
           }
-          
-          .metric-card h3 {
-            font-size: 2rem;
+
+          br {
+            display: none;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .metrics-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .feature-card {
+            padding: 1rem;
+          }
+
+          .hero {
+            padding: 1rem 0;
           }
         }
       `}</style>
