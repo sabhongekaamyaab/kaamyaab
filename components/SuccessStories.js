@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import successStories from '../data/Stories'; // Assuming you have a data file for success stories
 
 

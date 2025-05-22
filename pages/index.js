@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { getAllPosts } from '../lib/markdown'
 import ReachOut from '../components/ReachOut'
 import PlacementStats from '../components/PlacementStats'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import FAQ from '../components/Faq';
 
 export default function Home({ latestPosts }) {
