@@ -3,14 +3,14 @@ import EmailForm from '../components/EmailForm'
 
 export default function About() {
   return (
-    <Layout title="About | Kaamyaab India">
+    <Layout title="About | The AGI School India">
       <div className="about-container">
         <h1>About Us</h1>
         
         <section>
           <h2>Our Mission</h2>
           <p>
-            At Kaamyaab, we believe that everyone has the potential to be extraordinary.
+            At The AGI School, we believe that everyone has the potential to be extraordinary.
             Our mission is to empower individuals to achieve their goals and live the Great Indian dream.
             
             <br></br><br></br>
@@ -27,7 +27,7 @@ export default function About() {
           </p>
         </section>
         <section>
-            <h2>Why Kaamyaab?</h2>
+            <h2>Why The AGI School?</h2>
             <p>
             1. Indian colleges' curriculum is aged and is structured around incorrect and dated industry requirements. It's not their fault, it's the system.
             <br></br><br></br>
@@ -35,11 +35,11 @@ export default function About() {
             <br></br><br></br>
             3. The tech industry is changing rapidly, and colleges are struggling to keep up. As a result, students are graduating without the skills they need to succeed in their careers.
             <br></br><br></br>
-            At Kaamyaab, we are bridging this gap by providing students with the skills and knowledge they need to succeed in their careers. 
+            At The AGI School, we are bridging this gap by providing students with the skills and knowledge they need to succeed in their careers. 
             <br></br><br></br>
             Ready to start your journey with us? <br/><br/>
             <button className="cta-button">
-              <a href="/lead-gen">Join Kaamyaab</a>
+              <a href="/lead-gen">Join The AGI School</a>
             </button>
             <br></br><br></br>
           </p>

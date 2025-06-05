@@ -4,7 +4,7 @@ import Head from 'next/head'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGraduationCap, faIndustry, faChartLine } from '@fortawesome/free-solid-svg-icons';
 
-export default function WhyKaamyaab() {
+export default function WhyThe AGI School() {
   const stats = [
     {
       number: "500+",
@@ -32,7 +32,7 @@ export default function WhyKaamyaab() {
     <Layout>
       <div className="why-kaamyaab">
         <section className="hero">
-          <h1>Why Choose Kaamyaab?</h1>
+          <h1>Why Choose The AGI School?</h1>
           <p className="subtitle">
             Because all is not good with the current tech education system in India.
           </p>
@@ -110,7 +110,7 @@ export default function WhyKaamyaab() {
 
         <section className="solutions-section">
           <div className="solutions-header">
-            <h2>The Kaamyaab Solution</h2>
+            <h2>The The AGI School Solution</h2>
             <p className="solutions-subtitle">Our three-pronged approach to transform tech education</p>
           </div>
           
@@ -136,7 +136,7 @@ export default function WhyKaamyaab() {
 
           <div className="solutions-cta">
             <h3>Ready to Transform Your Tech Education?</h3>
-            <p>Join Kaamyaab and prepare your students for the future of tech</p>
+            <p>Join The AGI School and prepare your students for the future of tech</p>
             <Link href="/lead-gen">
               <button className="cta-button">Get Started</button>
             </Link>

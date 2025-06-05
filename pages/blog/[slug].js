@@ -4,7 +4,7 @@ import EmailForm from '../../components/EmailForm'
 
 export default function Post({ postData }) {
   return (
-    <Layout title={`${postData.title} | Kaamyaab India`}>
+    <Layout title={`${postData.title} | The AGI School India`}>
       <article className="blog-post">
         <h1>{postData.title}</h1>
         <div className="post-meta">

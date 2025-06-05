@@ -4,13 +4,13 @@ import SuccessStoriesSection from '../components/SuccessStoriesLeadGen';
 
 export default function LeadGen() {
   return (
-    <Layout title="Join Kaamyaab - Start Your Placement Journey">
+    <Layout title="Join The AGI School - Start Your Placement Journey">
       <div className="lead-gen-container">
         <div className="content-grid">
           {/* Left Section - Content */}
           <div className="content-section">
             <div className="content-header">
-              <h1>Start Your Placements Journey with Kaamyaab</h1>
+              <h1>Start Your Placements Journey with The AGI School</h1>
               <p className="description">
                 Join our community of successful tech professionals and take the first step towards your dream career.
                 Our structured approach and expert mentorship have helped hundreds of students land their dream jobs.
@@ -19,7 +19,7 @@ export default function LeadGen() {
             
             <div className="stories-section">
               <h2>Success Stories</h2>
-              <p className="stories-subtitle">See how Kaamyaab has transformed careers</p>
+              <p className="stories-subtitle">See how The AGI School has transformed careers</p>
               <SuccessStoriesSection />
             </div>
           </div>

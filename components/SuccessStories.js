@@ -49,6 +49,10 @@ export default function SuccessStories() {
           </div>
         ))}
       </div>
+      <p className="trust-description">
+        Hundreds of students have accelerated their careers with The AGI School. <br></br> 
+        Our alumni have landed roles at leading tech companies, with our hands-on curriculum and mentorship.
+      </p>
 
       <style jsx>{`
         .success-stories-container {
@@ -110,6 +114,13 @@ export default function SuccessStories() {
           font-style: italic;
           line-height: 1.6;
           font-size: 1.1rem;
+        }
+        .trust-description {
+          text-align: center;
+          margin-top: 2rem;
+          color: #333;
+          font-size: 1.1rem;
+          line-height: 1.6;
         }
         @media (max-width: 1200px) {
           .story-card {

@@ -3,9 +3,9 @@ import Header from './Header'
 import Footer from './Footer'
 import Script from 'next/script'
 
-export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI Education' }) {
-  const description = "Kaamyaab equips Indian students with one-year AI/ML & DSA programs to prepare them for top tech interviews. Our hands-on approach, expert mentors, and real-world projects ensure you become job-ready in just 12 months. Join us to unlock your potential and succeed in the AI-driven future."
-  const siteUrl = "https://kaamyaab.in" 
+export default function Layout({ children, title = 'The AGI School - Next-gen AI Education' }) {
+  const description = "The AGI School offers industry-aligned AI and DSA training programs to equip students with the skills needed for top tech jobs. Our hands-on approach, expert mentors, and real-world projects ensure job readiness in just 12 months. Join us to unlock your potential in the AI-driven future."
+  const siteUrl = 'https://theagischool.com' 
   const logoUrl = "https://kaamyaab.in/assets/kaamyaab.png" 
 
   return (
@@ -21,7 +21,7 @@ export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI
         <meta property="og:type" content="website" />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:image" content={logoUrl} />
-        <meta property="og:site_name" content="Kaamyaab India" />
+        <meta property="og:site_name" content="The AGI School" />
 
         {/* Twitter Card Meta Tags */}
         <meta name="x:card" content="summary_large_image" />
@@ -30,7 +30,7 @@ export default function Layout({ children, title = 'Kaamyaab India - Next-gen AI
         <meta name="x:image" content={logoUrl} />
         
         {/* Optional: If you have an X handle */}
-        <meta name="x:site" content="@kaamyaabin" />
+        <meta name="x:site" content="@theagischool" />
       </Head>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7j3z2l1Z4c5e5e5e5e5e5e5e5e5e5e5e5" crossOrigin="anonymous" />
       

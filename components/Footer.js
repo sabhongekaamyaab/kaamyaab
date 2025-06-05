@@ -3,7 +3,7 @@ export default function Footer() {
       <footer>
         <div className="footer-content">
           <div className="footer-left">
-            <p>© {new Date().getFullYear()} Kaamyaab India. All Rights Reserved.</p>
+            <p>© {new Date().getFullYear()} The AGI School. All Rights Reserved.</p>
           </div>
           <div className="footer-right">
             <a href="mailto:hello@kaamyaab.com" className="email-link">hello@kaamyaab.in</a>

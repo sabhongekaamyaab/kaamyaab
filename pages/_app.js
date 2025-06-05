@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 
-function Kaamyaab({ Component, pageProps }) {
+function TheAGISchool({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default Kaamyaab
+export default TheAGISchool

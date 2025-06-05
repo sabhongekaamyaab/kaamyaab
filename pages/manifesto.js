@@ -3,21 +3,21 @@ import EmailForm from '../components/EmailForm'
 
 export default function About() {
   return (
-    <Layout title="Manifesto | Kaamyaab India">
+    <Layout title="Manifesto | The AGI School India">
       <div className="about-container">
         <h1>Our Manifesto</h1>
         
         <section>
           <h2>Our Mission</h2>
           <p>
-            At Kaamyaab, we believe that businesses shouldn't be held back by repetitive tasks and inefficient workflows. Our mission is to redefine productivity through AI-driven automation, helping companies reduce manpower dependency and scale effortlessly.
+            At The AGI School, we believe that businesses shouldn't be held back by repetitive tasks and inefficient workflows. Our mission is to redefine productivity through AI-driven automation, helping companies reduce manpower dependency and scale effortlessly.
             <br></br><br></br>
             With a deep understanding of technology and business needs, we craft custom automation solutions that eliminate bottlenecks, optimize operations, and unlock new growth opportunities. From workflow automation to AI-powered decision-making, we transform the way businesses work—so they can focus on what truly matters.
             
           </p>
         </section>
         <section>
-            <h2>Why Kaamyaab?</h2>
+            <h2>Why The AGI School?</h2>
             <p>
             1. Tailor-made AI solutions – built specifically for your business needs. <br></br>
             2. Seamless integration – works effortlessly with your existing systems. <br></br>

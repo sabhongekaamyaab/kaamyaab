@@ -47,7 +47,7 @@ export default function Home({ latestPosts }) {
       <section className="trust-builder">
         <h2>Trusted by Students Nationwide</h2>
         <p className="trust-description">
-          Hundreds of students have accelerated their careers with Kaamyaab. <br></br> Our alumni have landed roles at leading tech companies, with our hands-on curriculum and mentorship.
+          Hundreds of students have accelerated their careers with The AGI School. <br></br> Our alumni have landed roles at leading tech companies, with our hands-on curriculum and mentorship.
         </p>
           <div className="success-stories-section">
           <SuccessStories/>
@@ -55,7 +55,7 @@ export default function Home({ latestPosts }) {
       </section>
 
       <section className="features">
-        <h2>Why Choose Kaamyaab?</h2>
+        <h2>Why Choose The AGI School?</h2>
         <div className="features-grid">
           <div className="feature-card">
             <h3>Comprehensive Curriculum</h3>
@@ -110,7 +110,7 @@ export default function Home({ latestPosts }) {
         <div className="features-grid">
           <div className="feature-card">
             <h3>Get in Touch</h3>
-            <p>Book a free consultation to discuss how Kaamyaab can add value to your institute's curriculum and student outcomes.</p>
+            <p>Book a free consultation to discuss how The AGI School can add value to your institute's curriculum and student outcomes.</p>
             <div className="cta-button" style={{marginTop: '1rem'}}>
               <Link href="https://calendly.com/sabhongekaamyaab/30min" target="_blank" rel="noopener noreferrer">
                 <button className="primary-button">

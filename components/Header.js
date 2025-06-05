@@ -9,7 +9,7 @@ export default function Header() {
       <nav>
         <div className="logo">
           <Link href="/">
-            <img src="/assets/kaamyaab.png" alt="Kaamyaab India" width="120" height="40" style={{objectFit: 'contain'}} />
+            <img src="/assets/kaamyaab.png" alt="The AGI School India" width="120" height="40" style={{objectFit: 'contain'}} />
           </Link>
         </div>
         
@@ -26,8 +26,8 @@ export default function Header() {
             </Link>
           </li> */}
           <li>
-            <Link href="why-kaamyaab">
-              Why Kaamyaab?
+            <Link href="why-theagischool">
+              Why The AGI School?
             </Link>
           </li>
           <li>
