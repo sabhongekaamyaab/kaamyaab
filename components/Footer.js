@@ -6,12 +6,12 @@ export default function Footer() {
             <p>© {new Date().getFullYear()} The AGI School. All Rights Reserved.</p>
           </div>
           <div className="footer-right">
-            <a href="mailto:hello@kaamyaab.com" className="email-link">hello@kaamyaab.in</a>
+            <a href="mailto:hello@theagischool.com" className="email-link">hello@theagischool.com</a>
             <div className="social-icons">
               {/* <a href="https://linkedin.com/company/kaamyaab" target="_blank" rel="noopener noreferrer">
                 <img src="/favicon/linkedin.ico" alt="LinkedIn" width="20" height="20" />
               </a> */}
-              <a href="https://linkedin.com/company/kaamyaabin"><p>LinkedIn</p></a>
+              <a href="https://linkedin.com/company/theagischool"><p>LinkedIn</p></a>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Footer() {
             transition: color 0.3s ease;
           }
           .email-link:hover {
-            color: #FF3131;
+            color: #0e4714;
           }
           .social-icons {
             display: flex;

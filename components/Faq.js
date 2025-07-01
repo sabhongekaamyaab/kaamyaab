@@ -102,7 +102,7 @@ export default function FAQ() {
 
         .faq-question.active {
           background: #f0f7ff;
-          color: #FF3131;
+          color: #0e4714;
         }
 
         .icon {

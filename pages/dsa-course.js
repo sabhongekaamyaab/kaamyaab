@@ -96,7 +96,7 @@ export default function DSACourse() {
           .hero {
             padding: 4rem 0;
             text-align: center;
-            background: linear-gradient(135deg,rgb(247, 62, 106) 0%, #FF3131 100%);
+            background: linear-gradient(135deg,rgb(247, 62, 106) 0%, #0e4714 100%);
             border-radius: 16px;
             color: white;
             margin: 2rem 0;

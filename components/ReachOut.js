@@ -70,7 +70,7 @@ export default function ReachOut() {
         }
         button {
           padding: 0.8rem 1.5rem;
-          background-color: #FF3131;
+          background-color: #0e4714;
           color: white;
           font-size: 1rem;
           border: none;
@@ -79,7 +79,7 @@ export default function ReachOut() {
           transition: background-color 0.3s ease;
         }
         button:hover {
-          background-color: #FF3131;
+          background-color: #0e4714;
         }
         button:disabled {
           background-color: #ccc;

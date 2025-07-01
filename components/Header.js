@@ -9,7 +9,7 @@ export default function Header() {
       <nav>
         <div className="logo">
           <Link href="/">
-            <img src="/assets/kaamyaab.png" alt="The AGI School India" width="120" height="40" style={{objectFit: 'contain'}} />
+            <img src="/assets/logo.png" alt="The AGI School India" width="120" height="40" style={{objectFit: 'contain'}} />
           </Link>
         </div>
         
@@ -63,7 +63,7 @@ export default function Header() {
           <li>
             <Link href="/get-in-touch">
               <button style={{
-                background: '#FF3131',
+                background: '#0e4714',
                 color: 'white',
                 padding: '8px 16px',
                 border: 'none',

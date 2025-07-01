@@ -286,13 +286,13 @@ export default function LeadGenForm() {
         }
         input:focus, select:focus {
           outline: none;
-          border-color: #FF3131;
+          border-color: #0E4714;
           box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
         }
         .submit-button {
           width: 100%;
           padding: 1rem;
-          background-color: #FF3131;
+          background-color: #0E4714;
           color: white;
           border: none;
           border-radius: 4px;
@@ -302,7 +302,7 @@ export default function LeadGenForm() {
           transition: background-color 0.3s ease;
         }
         .submit-button:hover {
-          background-color: #FF3131;
+          background-color: #0E4714;
         }
         .submit-button:disabled {
           background-color: #ccc;
@@ -345,14 +345,14 @@ export default function LeadGenForm() {
         }
 
         .toggle-button.active {
-          background: #FF3131;
+          background: #0E4714;
           color: white;
-          border-color: #FF3131;
+          border-color: #0E4714;
         }
 
         .toggle-button:hover:not(.active) {
-          border-color: #FF3131;
-          color: #FF3131;
+          border-color: #0E4714;
+          color: #0E4714;
         }
       `}</style>
     </div>

@@ -6,7 +6,7 @@ import Script from 'next/script'
 export default function Layout({ children, title = 'The AGI School - Next-gen AI Education' }) {
   const description = "The AGI School offers industry-aligned AI and DSA training programs to equip students with the skills needed for top tech jobs. Our hands-on approach, expert mentors, and real-world projects ensure job readiness in just 12 months. Join us to unlock your potential in the AI-driven future."
   const siteUrl = 'https://theagischool.com' 
-  const logoUrl = "https://kaamyaab.in/assets/kaamyaab.png" 
+  const logoUrl = "https://theagischool.com/assets/kaamyaab.png" 
 
   return (
     <div className="container">

@@ -4,7 +4,7 @@ import Head from 'next/head'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGraduationCap, faIndustry, faChartLine } from '@fortawesome/free-solid-svg-icons';
 
-export default function WhyThe AGI School() {
+export default function WhyTheAGISchool() {
   const stats = [
     {
       number: "500+",

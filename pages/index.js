@@ -259,7 +259,7 @@ export default function Home({ latestPosts }) {
         .primary-button {
           display: inline-block;
           padding: 0.8rem 1.5rem;
-          background-color: #FF3131;
+          background-color: #0e4714;
           color: white;
           border: none;
           border-radius: 4px;

@@ -69,7 +69,7 @@ export default function About() {
             please don't hesitate to get in touch.
           </p>
           <div className="contact-info">
-            <p><strong>Email:</strong> hello@kaamyaab.in (our average response time is 5 mins)</p>
+            <p><strong>Email:</strong> hello@theagischool.com (our average response time is 5 mins)</p>
             <p><strong>Phone:</strong> +91 70530 20016 (for Indian customers only)</p>
           </div>
         </section>
@@ -111,7 +111,7 @@ export default function About() {
           margin-top: 1rem;
         }
         .cta-button {
-          background-color: #FF3131;
+          background-color: #0e4714;
           color: white;
           padding: 10px 20px;
           border: none;
