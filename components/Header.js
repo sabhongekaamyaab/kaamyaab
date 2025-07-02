@@ -9,7 +9,7 @@ export default function Header() {
       <nav>
         <div className="logo">
           <Link href="/">
-            <img src="/assets/logo.png" alt="The AGI School India" width="120" height="40" style={{objectFit: 'contain'}} />
+            <img src="/assets/logo.png" alt="The AGI School India" width="150" height="40" style={{objectFit: 'contain'}} />
           </Link>
         </div>
         

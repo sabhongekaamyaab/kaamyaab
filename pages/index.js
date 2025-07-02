@@ -16,7 +16,7 @@ export default function Home({ latestPosts }) {
       <div className="hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Boost Placements with Industry-Ready AI & DSA Training</h1>
+            <h1 style={{color: '#0e4714'}}>Boost Placements with Industry-Ready AI & DSA Training</h1>
             <p className="description">
             Partner with us to deliver cutting-edge AI and DSA courses tailored to the job market. Help your students land top tech roles with our placement-focused curriculum.
             </p>
