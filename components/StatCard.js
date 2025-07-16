@@ -13,7 +13,6 @@ export default function StatCard({ stat, label, description }) {
           text-align: center;
           transition: transform 0.3s ease;
         }
-        // ...other styles
       `}</style>
     </div>
   )

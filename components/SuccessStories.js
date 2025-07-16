@@ -113,7 +113,7 @@ export default function SuccessStories() {
           color: #666;
           font-style: italic;
           line-height: 1.6;
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
         .trust-description {
           text-align: center;

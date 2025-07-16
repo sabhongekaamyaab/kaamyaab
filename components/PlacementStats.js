@@ -41,11 +41,11 @@ export default function PlacementStats() {
             <p>Students Placed</p>
           </div>
           <div className="metric-card">
-            <h3>₹{Math.round(counters.package)}L</h3>
+            <h3>{Math.round(counters.package)}L</h3>
             <p>Highest Package</p>
           </div>
           <div className="metric-card">
-            <h3>₹{Math.round(counters.average)}L</h3>
+            <h3>{Math.round(counters.average)}L</h3>
             <p>Average Package</p>
           </div>
           <div className="metric-card">

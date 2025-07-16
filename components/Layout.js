@@ -35,7 +35,7 @@ export default function Layout({ children, title = 'The AGI School - Next-gen AI
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7j3z2l1Z4c5e5e5e5e5e5e5e5e5e5e5e5" crossOrigin="anonymous" />
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
       
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-E0QV6X5Z24"

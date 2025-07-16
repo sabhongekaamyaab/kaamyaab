@@ -18,7 +18,7 @@ const successStories = [
   {
     id: 3,
     name: "Naveen",
-    company: "PlusGold",
+    company: "Paytm",
     city: "Delhi",
     feedback: "Coming from Tier-3 college, I never thought I could get into a top tech company. The AGI School made it possible.",
     image: "/assets/testimonials/naveen.jpg"
