@@ -17,10 +17,10 @@ Before delving into AI's current trajectory, it's crucial to appreciate the magn
 
 Software's impact was characterized by:
 
-* **Automation of processes:** From enterprise resource planning (ERP) systems to customer relationship management (CRM) tools, software automated complex workflows, increasing efficiency and reducing human error.
-* **Scalability:** Digital products and services could be replicated and distributed globally at near-zero marginal cost.
-* **Data processing:** Software enabled the collection, storage, and analysis of vast amounts of data, providing insights for decision-making.
-* **Connectivity:** The internet and software applications fostered unprecedented global communication and collaboration.
+1. **Automation of processes:** From enterprise resource planning (ERP) systems to customer relationship management (CRM) tools, software automated complex workflows, increasing efficiency and reducing human error.
+2. **Scalability:** Digital products and services could be replicated and distributed globally at near-zero marginal cost.
+3. **Data processing:** Software enabled the collection, storage, and analysis of vast amounts of data, providing insights for decision-making.
+4. **Connectivity:** The internet and software applications fostered unprecedented global communication and collaboration.
 
 However, software, at its core, relied on explicit instructions and predefined rules. Its intelligence was limited to what was explicitly programmed into it. This is where AI diverges, taking the "eating the world" metaphor to a whole new level.
 
@@ -57,7 +57,7 @@ Online forums and professional networks are abuzz with discussions about AI's im
 
 At The AGI School, we believe the "AI is eating the world" narrative is not a dystopian prophecy but a call to strategic evolution. Our unique insight is that successful navigation of this paradigm shift requires more than just technical proficiency; it demands a blend of **AI literacy, ethical understanding, and human-centric innovation.**
 
-1.  **Beyond the Code: The Rise of the AI Strategist and Integrator:** While AI can write code, it currently lacks the human intuition for complex problem framing, strategic vision, and understanding nuanced human needs. The future leaders in every industry won't just be able to *use* AI tools; they will be able to *strategize* how AI can be integrated across an organization to unlock unprecedented value, navigate ethical dilemmas, and create new market opportunities. This requires a deep understanding of AI's capabilities and limitations, coupled with strong business acumen and critical thinking.
+1.  **Beyond the Code: The Rise of the AI Strategist and Integrator:** While AI can write code, it currently lacks the human intuition for complex problem framing, strategic vision, and understanding nuanced human needs. The future leaders in every industry won't just be able to *use* AI tools; they will be able to strategize how AI can be integrated across an organization to unlock unprecedented value, navigate ethical dilemmas, and create new market opportunities. This requires a deep understanding of AI's capabilities and limitations, coupled with strong business acumen and critical thinking.
 
 2.  **The "Human Overlay" on AI:** Many online discussions on platforms like Reddit highlight anxieties about job displacement. However, our perspective is that the most valuable roles will be those that provide a "human overlay" to AI systems. This includes roles in:
     * **AI Ethics and Governance:** Ensuring AI systems are fair, transparent, and aligned with societal values.

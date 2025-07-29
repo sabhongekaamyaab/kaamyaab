@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 export default function LeadGenForm() {
   const [userType, setUserType] = useState('student')
@@ -63,298 +63,178 @@ export default function LeadGenForm() {
   }
 
   return (
-    <div className="form-container">
-      <div className="toggle-container">
-        <p>You're a</p>
-        <button
-          className={`toggle-button ${userType === 'student' ? 'active' : ''}`}
-          onClick={() => setUserType('student')}
-          type="button"
-        >
-          Student
-        </button>
-        <button
-          className={`toggle-button ${userType === 'college' ? 'active' : ''}`}
-          onClick={() => setUserType('college')}
-          type="button"
-        >
-          College
-        </button>
-      </div>
+    <div className="agi-leadgen-form">
+      <form
+        id="webform968100000000454003"
+        action="https://crm.zoho.in/crm/WebToLeadForm"
+        name="WebToLeads968100000000454003"
+        method="POST"
+        acceptCharset="UTF-8"
+      >
+        <input type="hidden" name="xnQsjsdp" value="4dd7d472e2a10a562f7121a2250fdeb52f4d91c9832058361eb148e1dd5a3490" />
+        <input type="hidden" name="zc_gad" id="zc_gad" value="" />
+        <input type="hidden" name="xmIwtLD" value="df12d9a447dd6741b21c6c90efcb806ff7bc252937ae3de27a8f2998a46d213d52e50c4e69d2a948199e6536800fadda" />
+        <input type="hidden" name="actionType" value="TGVhZHM=" />
+        <input type="hidden" name="returnURL" value="null" />
 
-      <form onSubmit={handleSubmit}>
-        {/* <h2>Join The AGI School</h2>
-        <p className="form-description">
-          {userType === 'student' 
-            ? 'Take the first step towards your dream career'
-            : 'Partner with us to transform your institutes tech education'
-          }
-        </p> */}
-        
-        <div className="form-group">
-          <label>Name</label>
+        <h2 className="agi-form-title">Get in Touch with The AGI School</h2>
+
+        <div className="agi-form-row">
+          <label htmlFor="First_Name">First Name</label>
           <input
             type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
+            id="First_Name"
+            name="First Name"
+            maxLength={40}
             required
-            placeholder={`Enter your full name`}
           />
         </div>
-
-        <div className="form-group">
-          <label>Phone Number</label>
+        <div className="agi-form-row">
+          <label htmlFor="Last_Name">Last Name <span style={{ color: '#0E4714' }}>*</span></label>
           <input
-            type="tel"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
+            type="text"
+            id="Last_Name"
+            name="Last Name"
+            maxLength={80}
             required
-            placeholder="Enter your phone number"
+          />
+        </div>
+        <div className="agi-form-row">
+          <label htmlFor="Company">Organisation (College) <span style={{ color: '#0E4714' }}>*</span></label>
+          <input
+            type="text"
+            id="Company"
+            name="Company"
+            maxLength={200}
+            required
+          />
+        </div>
+        <div className="agi-form-row">
+          <label htmlFor="Designation">Position</label>
+          <input
+            type="text"
+            id="Designation"
+            name="Designation"
+            maxLength={100}
+          />
+        </div>
+        <div className="agi-form-row">
+          <label htmlFor="Email">Email</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            maxLength={100}
+            autoComplete="off"
+          />
+        </div>
+        <div className="agi-form-row">
+          <label htmlFor="Mobile">Mobile</label>
+          <input
+            type="text"
+            id="Mobile"
+            name="Mobile"
+            maxLength={30}
+          />
+        </div>
+        <div className="agi-form-row">
+          <label htmlFor="No_of_Employees">No. of Students (Final Year)</label>
+          <input
+            type="text"
+            id="No_of_Employees"
+            name="No of Employees"
+            maxLength={9}
+          />
+        </div>
+        <input type="hidden" style={{ display: 'none' }} name="aG9uZXlwb3Q" value="" />
+
+        <div className="agi-form-actions">
+          <input
+            type="submit"
+            id="formsubmit"
+            className="agi-form-button"
+            value="Submit"
+          />
+          <input
+            type="reset"
+            className="agi-form-button agi-form-reset"
+            name="reset"
+            value="Reset"
           />
         </div>
 
-        {userType === 'student' ? (
-          <>
-            <div className="form-group">
-              <label>GitHub Profile</label>
-              <input
-                type="url"
-                name="github"
-                value={formData.github}
-                onChange={handleChange}
-                required
-                placeholder="Enter your GitHub profile URL"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>College Name</label>
-              <input
-                type="text"
-                name="college"
-                value={formData.college}
-                onChange={handleChange}
-                required
-                placeholder="Enter your college name"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Current Year</label>
-              <select
-                name="year"
-                value={formData.year}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Select Year</option>
-                <option value="1">First Year</option>
-                <option value="2">Second Year</option>
-                <option value="3">Third Year</option>
-                <option value="4">Fourth Year</option>
-              </select>
-            </div>
-
-            <div className="form-group">
-              <label>Programming Acumen</label>
-              <select
-                name="programming_acumen"
-                value={formData.programming_acumen}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Select Level</option>
-                <option value="beginner">Beginner</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="advanced">Advanced</option>
-              </select>
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="form-group">
-              <label>College Name</label>
-              <input
-                type="text"
-                name="college"
-                value={formData.college}
-                onChange={handleChange}
-                required
-                placeholder="Enter your college name"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Highest Package (LPA)</label>
-              <input
-                type="number"
-                name="highest_package"
-                value={formData.highest_package}
-                onChange={handleChange}
-                required
-                placeholder="Enter highest package offered"
-                min="0"
-                step="0.1"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Average Package (LPA)</label>
-              <input
-                type="number"
-                name="average_package"
-                value={formData.average_package}
-                onChange={handleChange}
-                required
-                placeholder="Enter average package offered"
-                min="0"
-                step="0.1"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Placement Percentage</label>
-              <input
-                type="number"
-                name="placement_percentage"
-                value={formData.placement_percentage}
-                onChange={handleChange}
-                required
-                placeholder="Enter placement percentage"
-                min="0"
-                max="100"
-                step="1"
-              />
-            </div>
-          </>
-        )}
-
-        <button
-          type="submit"
-          disabled={status === 'submitting'}
-          className="submit-button"
-        >
-          {status === 'submitting' ? 'Submitting...' : 'Get Started'}
-        </button>
-
-        {status === 'success' && (
-          <p className="success-message">Thank you for your submission! We'll be in touch soon.</p>
-        )}
-        {status === 'error' && (
-          <p className="error-message">Something went wrong. Please try again.</p>
-        )}
+        <style jsx>{`
+          .agi-leadgen-form {
+            background: #e9eae0;
+            border-radius: 16px;
+            border: 2px solid #0E4714;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            padding: 2rem;
+            max-width: 480px;
+            margin: 2rem auto;
+            font-family: 'Instrument Serif', serif;
+          }
+          .agi-form-title {
+            text-align: center;
+            color: #0E4714;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+          }
+          .agi-form-row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.25rem;
+          }
+          .agi-form-row label {
+            margin-bottom: 0.5rem;
+            color: #0E4714;
+            font-weight: 500;
+            font-size: 1rem;
+          }
+          .agi-form-row input {
+            padding: 0.75rem 1rem;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+          }
+          .agi-form-row input:focus {
+            border-color: #0E4714;
+            outline: none;
+          }
+          .agi-form-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+          }
+          .agi-form-button {
+            background: #0E4714;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+          }
+          .agi-form-button:hover {
+            background: #145c1c;
+          }
+          .agi-form-reset {
+            background: #eaeaea;
+            color: #0E4714;
+          }
+          @media (max-width: 600px) {
+            .agi-leadgen-form {
+              padding: 1rem;
+              max-width: 100%;
+            }
+          }
+        `}</style>
       </form>
-
-      <style jsx>{`
-        .form-container {
-          background: white;
-          border-radius: 8px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        form {
-          padding: 2rem;
-        }
-        h2 {
-          font-size: 1.5rem;
-          color: #333;
-          margin-bottom: 0.5rem;
-          margin-top: 0rem;
-          padding-top: 0rem;
-        }
-        .form-description {
-          color: #666;
-          margin-bottom: 2rem;
-        }
-        .form-group {
-          margin-bottom: 1.5rem;
-        }
-        label {
-          display: block;
-          margin-bottom: 0.5rem;
-          color: #333;
-          font-weight: 500;
-        }
-        input, select {
-          width: 100%;
-          padding: 0.8rem;
-          border: 1px solid #eaeaea;
-          border-radius: 4px;
-          font-size: 1rem;
-          transition: border-color 0.3s ease;
-        }
-        input:focus, select:focus {
-          outline: none;
-          border-color: #0E4714;
-          box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
-        }
-        .submit-button {
-          width: 100%;
-          padding: 1rem;
-          background-color: #0E4714;
-          color: white;
-          border: none;
-          border-radius: 4px;
-          font-size: 1rem;
-          font-weight: 500;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-        }
-        .submit-button:hover {
-          background-color: #0E4714;
-        }
-        .submit-button:disabled {
-          background-color: #ccc;
-          cursor: not-allowed;
-        }
-        .success-message {
-          margin-top: 1rem;
-          padding: 1rem;
-          background-color: #f0fff4;
-          color: #2f855a;
-          border-radius: 4px;
-          text-align: center;
-        }
-        .error-message {
-          margin-top: 1rem;
-          padding: 1rem;
-          background-color: #fff5f5;
-          color: #c53030;
-          border-radius: 4px;
-          text-align: center;
-        }
-        .toggle-container {
-          display: flex;
-          justify-content: center;
-          gap: 1rem;
-          padding: 1rem;
-          background: #f7f7f7;
-          border-radius: 8px 8px 0 0;
-        }
-
-        .toggle-button {
-          padding: 0.5rem 1.5rem;
-          border: 1px solid #eaeaea;
-          background: white;
-          border-radius: 4px;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          font-size: 1rem;
-          color: #666;
-        }
-
-        .toggle-button.active {
-          background: #0E4714;
-          color: white;
-          border-color: #0E4714;
-        }
-
-        .toggle-button:hover:not(.active) {
-          border-color: #0E4714;
-          color: #0E4714;
-        }
-      `}</style>
     </div>
-  )
+  );
 }

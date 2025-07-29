@@ -13,7 +13,7 @@ export default function PlacementStats() {
       students: 500,    // Total students placed
       package: 75,      // Highest package in LPA
       average: 18,      // Average package in LPA
-      percentage: 95    // Placement percentage
+      percentage: 76    // Placement percentage
     };
     
     const duration = 2000; // 2 seconds animation
