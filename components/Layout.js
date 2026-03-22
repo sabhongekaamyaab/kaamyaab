@@ -38,7 +38,7 @@ export default function Layout({ children, title = 'The AGI School - Next-gen AI
       <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
       
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-E0QV6X5Z24"
+        src="https://www.googletagmanager.com/gtag/js?id=G-VFLVDS25N2"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -47,7 +47,7 @@ export default function Layout({ children, title = 'The AGI School - Next-gen AI
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-E0QV6X5Z24');
+          gtag('config', 'G-VFLVDS25N2');
         `}
       </Script>
       
