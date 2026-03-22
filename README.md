@@ -31,3 +31,5 @@ This will:
 - Create a new admin user if the email doesn't exist
 - Hash the password securely
 - Store the credentials in the database
+
+- Deployment
